@@ -1,0 +1,17 @@
+export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:5000';
+
+export const ENDPOINTS = {
+    STATE_COUNT:'/api/state-count',
+    ZIP_COUNT:'/api/zip-count',
+    HOURLY:'/api/hourly',
+    PARALLEL:'/api/parallel',
+    YEARLY_TREND: '/api/yearly-trend',
+    WEEKDAY_COUNT: '/api/weekday-count',
+    COUNTY_COUNT: '/api/county-count',
+    SUNBURST: "/api/sunburst",
+    POI_DATA: "/api/poi-data",
+    ACCIDENT_LOCATIONS: '/api/accident-locations',
+    STATE_ZIP:    state => `/api/state/${state}/zip-count`,
+    STATE_HOURLY: state => `/api/state/${state}/hourly`,
+    STATE_PARALLEL: state => `/api/state/${state}/parallel`,
+  };
